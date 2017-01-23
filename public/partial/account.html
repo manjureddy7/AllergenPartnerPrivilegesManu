@@ -1,0 +1,74 @@
+<div class="header row">
+    <div class="col-md-3">
+        <a class="" role="button" data-toggle="collapse" href="#searchinput" aria-expanded="false" aria-controls="collapseExample">
+       </a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <h1>ALLERGAN PARTNER PRIVILEGES</h1>   <!-- The company Name -->
+    </div>
+    <div class="col-md-3 alignright">
+        <a href="#/profiledata"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> </a>
+        <a href="#/profile">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </a>
+        <a href="#/logout">
+            <input class="btn btn-primary button" type="button" value='Logout' ng-click="logout()">
+        </a>
+    </div>
+</div><br>
+
+<div class="searching">     <!-- Sorting of accounts depending on the account types -->
+    <div>
+        <label class="sort" >Sort accounts on:</label>
+        <select value="Silver" ng-model="filterByOption">
+			<option class="levelindicator" value="Silver">Silver and above</option>
+			<option class="levelindicator" value="Gold">Gold and above</option>
+			<option class="levelindicator" value="Platinum">Platinum and above</option>
+			<option class="levelindicator" value="Platinum Plus">Platinum Plus and above</option>
+			<option class="levelindicator" value="Diamond">Diamond and above</option>
+		</select>
+    </div><br>
+    <div>
+        <input type="text" class="form-control" placeholder="Enter any account criteria to search" id="query" name="query" value="" ng-model="test"><br>
+        <label class="listaccounts" >List of accounts</label>
+        <select value="sort" ng-model="sortColumn">
+			<option class="levelindicator" value="level">Level</option>
+			<option class="levelindicator" value="accountname">Account</option>
+			<option class="levelindicator" value="location">Location</option>
+			<option class="levelindicator" value="tier">Tier</option>
+		</select>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Tier</th>
+                <th>Accountsname</th>
+                <th>Location</th>
+                <th>Account</th>
+                <th>Points</th>
+                <th>Territory code</th>
+                <th>Sold To</th>
+                <th>Ship To</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="account in accounts |filter:test |filter:checkLevel| orderBy:sortColumn ">
+                <td>{{account.level}}</td>
+                <td class="tier">{{account.tier}}</td>
+                <td>{{account.accountname}}</td>
+                <td>{{account.location}}</td>
+                <td>{{account.account}}</td>
+                <td class="points">{{account.points}}</td>
+                <td>{{account.territorycode}}</td>
+                <td>{{account.soldto}}</td>
+                <td>{{account.shipto}}</td>
+                <td>
+                    <a href="#/account/level"><img class="go" src="images/go.jpg" ></a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

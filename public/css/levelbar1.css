@@ -1,0 +1,169 @@
+.hexagon {
+  position: relative;
+  width: 20px; 
+  height: 11.55px;
+  background-color: #64C7CC;
+  margin: 5.77px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.hexagon-blank:before,
+.hexagon-blank:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+ul{
+      margin-bottom: 18px;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 5.77px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid #64C7CC;
+}
+
+.hexagon-blank{
+    position: relative;
+  width: 20px; 
+  height: 11.55px;
+  background-color: #312828;
+  margin: 5.77px 0;
+}
+.hexagon-blank:before{
+    bottom: 100%;
+  border-bottom: 5.77px solid #312828;
+}
+.hexagon-blank:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid #312828;
+}
+
+.lefty{
+    float: left;
+}
+.righty{
+    float: left;
+}
+ul li{
+    list-style-type: none;
+}
+.righty ul li{
+    display: inline-block;
+}
+.lefty ul li{
+    padding-bottom: 26px;
+}
+.ratings{
+    float: left;
+        padding-left: 100px;
+    padding-top: 15px;
+        margin-top: -158px;
+
+}
+#container{
+    float: left;
+}
+#description{
+   padding-top: 20px;
+   padding-left: 20px;
+}
+.level{
+    float: left;
+    width: 70%;
+    background-color: #003A56;
+}
+.highcharts-background{
+   color: #003A56;
+}
+.dermi{
+   margin-top: -46px;
+
+}
+canvas{
+    padding-left: 10px;
+    height: 220px;
+}
+.btn-ctl{
+    background-color: #003A56;
+    height: 150%;
+    padding: 10px;
+
+}
+body{
+    background-color: #003A56;
+}
+button{
+    background-color: #4088ab;
+    border-radius: 14px;
+    padding: 10px;
+     margin: 10px;
+
+}
+.pyra{
+    width: 200px;
+    height: 200px;
+}
+.graphy{
+       clear: both;
+     }
+.side_color {
+    color:#00b8e6;
+}
+.meddetails{
+    height: 200px;
+}
+.monthly{
+   color:#00b8e6;
+}
+#description{
+  height: 250px;
+  width: 100%;
+ 
+}
+#container{
+  min-width: 410px;
+  max-width: 300px;
+  height: 300px
+}
+#id{
+  text-align: center;
+  color: #3d97c3;
+}
+.dermi{
+  color: #3d97c3;
+}
+.dermit{
+  color: #3d97c3;
+}
+.go{
+  width:20px;
+  height:20px;
+}
+.listaccounts{
+  color: white;
+}
+.sort{
+  color: white;
+}
+#signin{
+  color: black;
+}
+.levelindicator{
+  color: #006699;
+}

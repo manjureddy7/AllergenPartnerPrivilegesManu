@@ -1,0 +1,34 @@
+.banner img{
+	width: auto;
+}
+
+.menu{
+background-color:#003a56;
+}
+
+/*LogIn*/
+
+.logo img{
+	margin: 30px 0 0 30px;
+}
+
+.sectionright h1{
+	padding-top:50px;
+}
+
+.abc{
+	background-color:white;
+	width: 70%;
+	padding: 10px;
+}
+
+/*Accounts*/
+.drop{
+	display: block;
+}
+
+.bttn{
+	padding:5px 15px 5px 15px;
+	background-color: #0ea0cf;
+	margin-left:20px;
+}	

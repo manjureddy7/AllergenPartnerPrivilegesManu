@@ -1,0 +1,59 @@
+<div class="header row">
+    <div class="col-md-3">
+        <a class="" role="button" data-toggle="collapse" href="#searchinput" aria-expanded="false" aria-controls="collapseExample">
+           <!--  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+        </a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <h1>ALLERGAN PARTNER PRIVILEGES</h1>
+    </div>
+    <div class="col-md-3 alignright">
+        <a href="#/home">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </a>
+
+        <a href="#/login">
+            <input class="btn btn-primary button" type="button" value='Login' ng-click="login()">
+        </a>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="sectionlogin container">
+        <div class="col-md-4 col-xs-12 logo">
+            <img src="images/logo.jpg" class="img-thumbnail">
+        </div>
+        <div class="col-md-7 col-xs-12 col-md-offset-1">
+            <div class="sectionright">
+                <h1>TAKE YOUR PRACTICE <br> TO THE NEW LEVEL</h1>
+                <p>Sign in</p>
+            </div>
+            <div class="abc">
+                <form class="form-horizontal" name="formdata">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label one">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="usr" placeholder="allergan@allergan.com" ng-model="user.uname" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control " id="pwd" ng-model="user.password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="Sign">
+                <input type="button" id="signin" class="btn" value="Sign In" ng-click="submit()" ng-disabled="formdata.$invalid">
+            </div>
+            <div>
+                <h2 class="warn" >{{warning}}</h2>
+            </div>
+            <div class="bottom">
+                <p>Incase of any queries please reach on to <strong> 040-2345-67890</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
